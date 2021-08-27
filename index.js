@@ -1,5 +1,7 @@
 /* JAVASCRIPT */
 
+
+
 /*========================EJERCICIO 24 VU====================================================================== */
 
 var foo = 1;
@@ -11,26 +13,33 @@ function bar() {
   }
   console.log(foo);
 }
+console.log("------ Ejercicio 24 --------");
 bar();
 // resultado 10
 
+
+
+
+
+
 /*=========================EJERCICIO 25 VU================================================================================ */
 function output(e) {
-
   if (e == { name: "vu" }) {
     return "vu";
   } else {
     return "security";
   }
 }
+console.log("------ Ejercicio 25 --------");
 console.log(output({ name: "vu" }));
 // Resultado "security"
 
 
+
 function objEq(ob) {
-/***************************************************
- * ALTERNATIVA PARA DETERMINAR IGUALDAD DE OBJETOS *
- ***************************************************/
+  /***************************************************
+   * ALTERNATIVA PARA DETERMINAR IGUALDAD DE OBJETOS *
+   ***************************************************/
   let oj = { name: "vu" };
   let equal = "vu";
   for (let [key, val] of Object.entries(oj)) {
@@ -47,9 +56,16 @@ function objEq(ob) {
   }
   return equal;
 }
+console.log("------ Ejercicio 25 # Alternativa # --------");
 console.log(objEq({ name: "vu" }));
 
 // Resutado "vu"
+
+
+
+
+
+
 
 /*===============================EJERCICIO 26 VU========================================================== */
 
@@ -64,6 +80,7 @@ function fn(j) {
     try {
       res(
         setTimeout(() => {
+          console.log('--')
           console.log(j);
         }, 0)
       );
@@ -75,11 +92,22 @@ function fn(j) {
 }
 
 for (var i = 0; i < 4; i++) {
-    fn(i);
-}
-for (var i = 0; i < 4; i++) {
   setTimeout(() => console.log(i), 0);
 }
+
+console.log("------ Ejercicio 26 +  Alternativa -promises- # --------");
+
+for (var i = 0; i < 4; i++) {
+  fn(i);
+}
+
+
+
+
+
+
+
+
 /*==============================EJERCICIO 27 VU============================================================== */
 
 // (function () { ... })(); EFFI
